@@ -1,1 +1,144 @@
 
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PONTO</title>
+
+    <!-- Bootstrap e ícones -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Fonte -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lemon&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="A.css">
+
+</head>
+
+<body>
+
+    <header class="p-4 bg-light shadow-sm position-relative">
+
+        <nav class="container d-flex justify-content-between align-items-center flex-wrap">
+
+            <h1 class="logo m-0">PONTO</h1>
+
+            <ul class="nav">
+
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+
+            </ul>
+
+            <!-- Botão de acessibilidade -->
+
+            <div class="menu-acessibilidade">
+
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold">
+
+                    <i class="bi bi-universal-access"></i>
+
+                </button>
+
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade">
+
+                    <button id="aumentar-fonte" class="btn btn-secondary btn-sm mb-1">A+</button>
+
+                    <button id="diminuir-fonte" class="btn btn-secondary btn-sm mb-1">A-</button>
+
+                    <button id="alterna-contraste" class="btn btn-secondary btn-sm">
+
+                        <i class="bi bi-shadows"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main class="container my-5">
+
+        <section id="inicio" class="text-center my-5">
+
+            <h2>Bem-vindo ao meu site</h2>
+
+            <p>Este site demonstra acessibilidade funcional, responsividade e ajustes de contraste e fonte.</p>
+
+        </section>
+
+        <section id="sobre" class="my-5">
+
+            <h3>Sobre o projeto</h3>
+
+            <p>Desenvolvido com HTML, CSS e JS, totalmente funcional.</p>
+
+        </section>
+
+        <section id="contato" class="my-5">
+
+            <h3>Contato</h3>
+
+            <form>
+
+                <div class="mb-3">
+
+                    <label for="nome" class="form-label">Nome</label>
+
+                    <input type="text" id="nome" class="form-control" required>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label for="email" class="form-label">E-mail</label>
+
+                    <input type="email" id="email" class="form-control" required>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label for="mensagem" class="form-label">Mensagem</label>
+
+                    <textarea id="mensagem" class="form-control" rows="4" required></textarea>
+
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+
+        <p>© 2025 Projeto Escolar</p>
+
+    </footer>
+
+    <script src="L.js"></script>
+
+</body>
+
+</html>
