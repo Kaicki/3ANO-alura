@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ayrton Senna - Legado de um Campeão</title>
+
+  <!-- Bootstrap e ícones -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lemon&display=swap" rel="stylesheet" />
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="A.css" />
+
+  <!-- Adicionando o ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <style>
+    .opcoes-acessibilidade {
+      position: fixed;
+      top: 20%;
+      right: 10px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      color: white;
+      border-radius: 5px;
+      display: none;
+      z-index: 1000;
+    }
+
+    .opcoes-acessibilidade button {
+      margin-bottom: 10px;
+    }
+
+    body.alto-contraste {
+      background-color: #000;
+      color: #fff;
+    }
+
+    body.alto-contraste a {
+      color: #ff0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Botão lateral -->
+  <button id="botao-acessibilidade" class="btn btn-primary fw-bold" aria-label="Abrir menu de acessibilidade">
+    <i class="bi bi-universal-access"></i>
+  </button>
+
+  <!-- Menu lateral -->
+  <div id="opcoes-acessibilidade" class="opcoes-acessibilidade" role="dialog" aria-labelledby="acessibilidade-label">
+    <p id="acessibilidade-label" class="fw-bold">Opções de Acessibilidade</p>
+    <button id="aumentar-fonte" class="btn btn-secondary btn-sm mb-2">A+</button>
+    <button id="diminuir-fonte" class="btn btn-secondary btn-sm mb-2">A-</button>
+    <button id="alterna-contraste" class="btn btn-secondary btn-sm">
+      <i class="bi bi-shadows"></i> Contraste
+    </button>
+    <p id="feedback-fonte" class="mt-2">Fonte: 16px</p>
+  </div>
+
+  <header class="p-4 bg-light shadow-sm position-relative">
+    <nav class="container d-flex justify-content-between align-items-center flex-wrap">
+      <h1 class="logo m-0">AYRTON SENNA</h1>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#biografia">Biografia</a></li>
+        <li class="nav-item"><a class="nav-link" href="#carreira">Carreira</a></li>
+        <li class="nav-item"><a class="nav-link" href="#curiosidades">Curiosidades</a></li>
+        <li class="nav-item"><a class="nav-link" href="#instituto">Instituto</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <!-- Início -->
+    <section id="inicio" class="text-center my-5 position-relative animate">
+      <img src="http://senna.com/wp-content/uploads/2024/03/91FR_F001-A5-1-1536x1022.jpg"
+        alt="Ayrton Senna em 1991"
+        class="img-fluid rounded shadow"
+        style="max-height:400px; object-fit:cover; width:100%;" />
+      <div class="mt-3">
+        <h2>Ayrton Senna</h2>
+        <p>Um ídolo eterno da Fórmula 1</p>
+      </div>
+    </section>
+
+    <!-- Biografia -->
+    <section id="biografia" class="my-5 animate">
+      <h3>Biografia</h3>
+      <p><strong>Nome completo:</strong> Ayrton Senna da Silva</p>
+      <p><strong>Nascimento:</strong> 21 de março de 1960, São Paulo, Brasil</p>
+      <p><strong>Falecimento:</strong> 1º de maio de 1994, Imola, Itália</p>
+
+      <p>
+        Ayrton Senna foi um dos maiores pilotos da Fórmula 1, lembrado por sua determinação,
+        rivalidade com Alain Prost e talento extraordinário. Campeão mundial em 1988, 1990 e 1991,
+        ele se tornou um ídolo eterno, símbolo de dedicação, velocidade e amor pelo Brasil.
+      </p>
+    </section>
+
+    <!-- Carreira -->
+    <section id="carreira" class="my-5 animate">
+      <h3>Carreira</h3>
+      <p>
+        Senna começou no kart aos 13 anos e logo se destacou. Em 1984 estreou na Fórmula 1 pela Toleman,
+        chamando atenção ao conquistar um pódio em Mônaco sob chuva intensa. Passou pela Lotus, onde
+        obteve vitórias impressionantes, e alcançou o auge na McLaren, onde conquistou seus três títulos mundiais.
+      </p>
+      <ul>
+        <li><strong>1984:</strong> Estreia na Fórmula 1 pela Toleman.</li>
+        <li><strong>1985-1987:</strong> Correu pela Lotus, conseguindo várias vitórias.</li>
+        <li><strong>1988:</strong> Campeão mundial pela McLaren-Honda.</li>
+        <li><strong>1990 e 1991:</strong> Bicampeonato consecutivo, consolidando-se como lenda.</li>
+        <li><strong>1994:</strong> Transferiu-se para a Williams, mas sofreu o trágico acidente em Imola.</li>
+      </ul>
+    </section>
+
+    <!-- Curiosidades -->
+    <section id="curiosidades" class="my-5 animate">
+      <h3>Curiosidades</h3>
+      <ul>
+        <li>Era considerado um dos melhores pilotos em pista molhada da história.</li>
+        <li>Fez uma das maiores corridas da F1 em <strong>Donington Park (1993)</strong>, ultrapassando 5 carros na primeira volta.</li>
+        <li>Era extremamente religioso e sempre carregava uma Bíblia.</li>
+        <li>Fundou o Instituto Ayrton Senna, dedicado à educação no Brasil.</li>
+        <li>Até hoje é lembrado como herói nacional, com músicas, filmes e homenagens em todo o mundo.</li>
+      </ul>
+    </section>
+
+    <!-- Instituto -->
+    <section id="instituto" class="my-5 animate">
+      <h3>Instituto Ayrton Senna</h3>
+      <p>
+        Criado após sua morte pela irmã Viviane Senna, o instituto investe em educação para crianças e jovens brasileiros.
+        Já beneficiou milhões de estudantes em todo o país, com programas que fortalecem o aprendizado e ampliam as oportunidades.
+      </p>
+      <a href="https://institutoayrtonsenna.org.br" target="_blank" class="btn btn-success">Conheça o Instituto</a>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="my-5 animate">
+      <h3>Envie sua homenagem</h3>
+      <form>
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" id="nome" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" id="email" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea id="mensagem" class="form-control" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center py-3 animate">
+    <p>© 2025 Kaicki Bertaglia | Em memória de Ayrton Senna</p>
+  </footer>
+
+  <script src="L.js"></script>
+</body>
+</html>

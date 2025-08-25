@@ -1,0 +1,89 @@
+/* Reset básico */
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-color: white;
+    color: #fc0400;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Cabeçalho */
+.logo {
+    font-family: 'Lemon', cursive;
+    font-size: 1.8rem;
+    color: #fc0400;
+}
+
+/* Links */
+.nav-link {
+    color: #fc0400;
+    font-weight: 600;
+}
+.nav-link:hover {
+    color: #fc0400;
+}
+
+/* 🔘 Botão de acessibilidade fixo */
+#botao-acessibilidade {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 2000;
+    border-radius: 50%;
+    padding: 12px 15px;
+    font-size: 1.2rem;
+    background-color: #007bff; /* Cor neutra */
+    color: white; /* Texto em branco para contraste */
+    border: none; /* Remove borda */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 60px; /* Tamanho fixo para o botão */
+    height: 60px; /* Tamanho fixo para o botão */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover sobre o botão */
+#botao-acessibilidade:hover {
+    background-color: #0056b3; /* Cor mais escura no hover */
+    transform: scale(1.1); /* Aumenta um pouco de tamanho no hover */
+}
+
+/* 🔴 Menu lateral escondido */
+#opcoes-acessibilidade {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 70px;
+    transform: translateY(-50%);
+    background: #007bff; /* Cor de fundo do menu de acessibilidade */
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 10px;
+    z-index: 1999;
+}
+
+/* Mostrar menu quando ativo */
+#opcoes-acessibilidade.active {
+    display: block;
+}
+
+/* Contraste alto */
+body.alto-contraste {
+    background-color: black !important;
+    color: white !important;
+}
+
+body.alto-contraste a,
+body.alto-contraste .nav-link {
+    color: yellow !important;
+}
+
+body.alto-contraste header,
+body.alto-contraste footer {
+    background-color: #fc0400!important;
+    color: yellow !important;
+}
